@@ -1,0 +1,20 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:26: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+Traceback (most recent call last):
+  File "main_timegan.py", line 221, in <module>
+    ori_data, generated_data, metrics = main(args)
+  File "main_timegan.py", line 94, in main
+    generated_data = timegan_conditional(ori_data, categories, parameters)
+  File "/home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py", line 77, in timegan_conditional
+    ori_data = ori_data[:,:, np.newaxis]
+IndexError: too many indices for array: array is 1-dimensional, but 2 were indexed
+(0,)
+BL_weekly_new_train dataset is ready.
+0
+[]
+(0,)
+nomr_data_list
+0
+[]
+[]
+0 0

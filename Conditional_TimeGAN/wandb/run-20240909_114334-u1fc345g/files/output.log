@@ -1,0 +1,79 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:26: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:93: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:101: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:101: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/utils.py:95: GRUCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.GRUCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:103: MultiRNNCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.StackedRNNCells, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:104: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:559: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:565: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:575: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/contrib/layers/python/layers/layers.py:1866: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+ori_data shape : (24, 354)
+BL_weekly_new_train dataset is ready.
+[[1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]]
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:170: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:177: The name tf.losses.sigmoid_cross_entropy is deprecated. Please use tf.compat.v1.losses.sigmoid_cross_entropy instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:184: The name tf.losses.mean_squared_error is deprecated. Please use tf.compat.v1.losses.mean_squared_error instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:197: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:204: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:205: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+step: 0/1, e_loss: 0.389
+Finsh Embedding network
+Traceback (most recent call last):
+  File "main_timegan.py", line 221, in <module>
+    ori_data, generated_data, metrics = main(args)
+  File "main_timegan.py", line 94, in main
+    generated_data = timegan_conditional(ori_data, categories, parameters)
+  File "/home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py", line 270, in timegan_conditional
+    generated_data_cat = generated_data_cat * (max_vals[i] + 1e-7) + min_vals[i]
+IndexError: index 1 is out of bounds for axis 0 with size 1
+step: 0/1, d_loss: 1.9803, g_loss_u: 0.8337, g_loss_s: 0.0856, g_loss_v: 0.4476

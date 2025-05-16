@@ -1,0 +1,133 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:26: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+ori_data shape : (24, 354)
+BL_weekly_new_train dataset is ready.
+24
+[[0.00423729 0.01016949 0.00508475 ... 0.27966102 0.35169492 0.3220339 ]
+ [0.01016949 0.00508475 0.00508475 ... 0.35169492 0.3220339  0.20084746]
+ [0.00508475 0.00508475 0.00423729 ... 0.3220339  0.20084746 0.08898305]
+ ...
+ [0.25631769 0.21119134 0.13357401 ... 0.47833935 0.33212996 0.47111913]
+ [0.21119134 0.13357401 0.28700361 ... 0.33212996 0.47111913 0.29061372]
+ [0.13357401 0.28700361 0.15162455 ... 0.47111913 0.29061372 0.25812274]]
+> /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py(60)timegan_conditional()
+-> norm_data, min_val, max_val = MinMaxScaler(ori_data[:12])
+(24, 354)
+norm_data_list
+2
+[0.0, 0.0]
+[0.9999999999152541, 0.9999999998194946]
+2 2
+[[1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]]
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:60: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:122: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:122: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/utils.py:95: GRUCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.GRUCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:124: MultiRNNCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.StackedRNNCells, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:125: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:559: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:565: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:575: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/contrib/layers/python/layers/layers.py:1866: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:60: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:60: The name tf.losses.sigmoid_cross_entropy is deprecated. Please use tf.compat.v1.losses.sigmoid_cross_entropy instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:60: The name tf.losses.mean_squared_error is deprecated. Please use tf.compat.v1.losses.mean_squared_error instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:60: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:60: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:60: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+step: 0/1, e_loss: 0.2645
+Finsh Embedding network
+step: 0/1, d_loss: 2.1732, g_loss_u: 0.6102, g_loss_s: 0.0776, g_loss_v: 0.319
+2
+> /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py(287)timegan_conditional()
+-> for i in range(len(norm_data_list)):  #norm_data_list 잘못됨!!!
+[array([[0.00423729, 0.01016949, 0.00508475, ..., 0.27966099, 0.35169488,
+        0.32203387],
+       [0.01016949, 0.00508475, 0.00508475, ..., 0.35169488, 0.32203387,
+        0.20084744],
+       [0.00508475, 0.00508475, 0.00423729, ..., 0.32203387, 0.20084744,
+        0.08898304],
+       ...,
+       [0.02627118, 0.04661016, 0.08813558, ..., 0.02966101, 0.02457627,
+        0.0338983 ],
+       [0.04661016, 0.08813558, 0.14152541, ..., 0.02457627, 0.0338983 ,
+        0.03220339],
+       [0.08813558, 0.14152541, 0.11694914, ..., 0.0338983 , 0.03220339,
+        0.0677966 ]]), array([[0.0234657 , 0.17328518, 0.15162453, ..., 0.18953067, 0.19133572,
+        0.2274368 ],
+       [0.17328518, 0.15162453, 0.1570397 , ..., 0.19133572, 0.2274368 ,
+        0.35740069],
+       [0.15162453, 0.1570397 , 0.2509025 , ..., 0.2274368 , 0.35740069,
+        0.56317684],
+       ...,
+       [0.25631766, 0.21119131, 0.13357399, ..., 0.4783393 , 0.33212993,
+        0.47111909],
+       [0.21119131, 0.13357399, 0.28700358, ..., 0.33212993, 0.47111909,
+        0.29061369],
+       [0.13357399, 0.28700358, 0.15162453, ..., 0.47111909, 0.29061369,
+        0.25812272]])]
+*** AttributeError: 'list' object has no attribute 'shape'
+2
+12
+--KeyboardInterrupt--
+Traceback (most recent call last):
+  File "main_timegan.py", line 221, in <module>
+    ori_data, generated_data, metrics = main(args)
+  File "main_timegan.py", line 94, in main
+    generated_data = timegan_conditional(ori_data, categories, parameters)
+  File "/home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py", line 287, in timegan_conditional
+    for i in range(24):  #norm_data_list 잘못됨!!!
+  File "/home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py", line 287, in timegan_conditional
+    for i in range(24):  #norm_data_list 잘못됨!!!
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

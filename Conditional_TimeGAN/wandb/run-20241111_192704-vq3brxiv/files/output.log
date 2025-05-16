@@ -1,0 +1,8 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+usage: main_timegan.py [-h]
+                       [--data_name {BL_weekly_new_train,CT_weekly_new_train,JK_weekly_new_train,JP_weekly_new_train,KC_weekly_new_train,TS_weekly_new_train,KT_weekly_new_train,OP_weekly_new_train,PD_weekly_new_train,SK_weekly_new_train,SL_weekly_new_train,TC_weekly_new_train,VT_weekly_new_train}]
+                       [--seq_len SEQ_LEN] [--module {gru,lstm,lstmLN}]
+                       [--hidden_dim HIDDEN_DIM] [--num_layer NUM_LAYER]
+                       [--iteration ITERATION] [--batch_size BATCH_SIZE]
+                       [--metric_iteration METRIC_ITERATION]
+main_timegan.py: error: unrecognized arguments: num_layer 6

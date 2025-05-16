@@ -1,0 +1,144 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:28: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:105: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:113: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:113: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/utils.py:95: GRUCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.GRUCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:115: MultiRNNCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.StackedRNNCells, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:116: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:559: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:565: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:575: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/contrib/layers/python/layers/layers.py:1866: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+ori_data shape : (156, 354)
+BL_weekly_new_train dataset is ready.
+156
+[[[0.00423729]
+  [0.01016949]
+  [0.00508475]
+  ...
+  [0.27966102]
+  [0.35169492]
+  [0.3220339 ]]
+ [[0.01016949]
+  [0.00508475]
+  [0.00508475]
+  ...
+  [0.35169492]
+  [0.3220339 ]
+  [0.20084746]]
+ [[0.00508475]
+  [0.00508475]
+  [0.00423729]
+  ...
+  [0.3220339 ]
+  [0.20084746]
+  [0.08898305]]
+ ...
+ [[0.08376963]
+  [0.06282723]
+  [0.09424084]
+  ...
+  [0.45026178]
+  [0.2513089 ]
+  [0.2513089 ]]
+ [[0.06282723]
+  [0.09424084]
+  [0.14136126]
+  ...
+  [0.2513089 ]
+  [0.2513089 ]
+  [0.17801047]]
+ [[0.09424084]
+  [0.14136126]
+  [0.19371728]
+  ...
+  [0.2513089 ]
+  [0.17801047]
+  [0.20418848]]]
+[[1. 0. 0. ... 0. 0. 0.]
+ [1. 0. 0. ... 0. 0. 0.]
+ [1. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 1.]
+ [0. 0. 0. ... 0. 0. 1.]
+ [0. 0. 0. ... 0. 0. 1.]]
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:228: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:235: The name tf.losses.sigmoid_cross_entropy is deprecated. Please use tf.compat.v1.losses.sigmoid_cross_entropy instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:242: The name tf.losses.mean_squared_error is deprecated. Please use tf.compat.v1.losses.mean_squared_error instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:255: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:262: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:263: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+step: 0/1, e_loss: 0.3097
+Traceback (most recent call last):
+  File "main_timegan.py", line 221, in <module>
+    ori_data, generated_data, metrics = main(args)
+  File "main_timegan.py", line 94, in main
+    generated_data = timegan_conditional(ori_data, categories, parameters)
+  File "/home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py", line 284, in timegan_conditional
+    check_embeddings(sess, X_mb, T_mb, C_mb, embedder_func)
+  File "/home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py", line 203, in check_embeddings
+    plt.savefig(save_path)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/pyplot.py", line 977, in savefig
+    res = fig.savefig(*args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/figure.py", line 3058, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 2325, in print_figure
+    **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 1648, in wrapper
+    return func(*args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/_api/deprecation.py", line 415, in wrapper
+    return func(*inner_args, **inner_kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/backends/backend_agg.py", line 540, in print_png
+    FigureCanvasAgg.draw(self)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/backends/backend_agg.py", line 436, in draw
+    self.figure.draw(self.renderer)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/artist.py", line 74, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/artist.py", line 51, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/figure.py", line 2846, in draw
+    renderer, self, artists, self.suppressComposite)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/artist.py", line 51, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/axes/_base.py", line 3092, in draw
+    renderer, self, artists, self.figure.suppressComposite)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/artist.py", line 51, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/legend.py", line 620, in draw
+    bbox = self._legend_box.get_window_extent(renderer)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/offsetbox.py", line 351, in get_window_extent
+    px, py = self.get_offset(w, h, xd, yd, renderer)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/offsetbox.py", line 291, in get_offset
+    if callable(self._offset)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/matplotlib/legend.py", line 589, in _findoffset
+    x, y = self._find_best_position(width, height, renderer)
+KeyboardInterrupt

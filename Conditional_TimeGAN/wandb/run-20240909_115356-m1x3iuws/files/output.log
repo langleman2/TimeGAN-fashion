@@ -1,0 +1,89 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:26: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:99: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:107: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:107: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/utils.py:95: GRUCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.GRUCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:109: MultiRNNCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.StackedRNNCells, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:110: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:559: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:565: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:575: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/contrib/layers/python/layers/layers.py:1866: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+ori_data shape : (24, 354)
+BL_weekly_new_train dataset is ready.
+[[1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [1. 0.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]
+ [0. 1.]]
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:176: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:183: The name tf.losses.sigmoid_cross_entropy is deprecated. Please use tf.compat.v1.losses.sigmoid_cross_entropy instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:190: The name tf.losses.mean_squared_error is deprecated. Please use tf.compat.v1.losses.mean_squared_error instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:203: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:210: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:211: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+step: 0/4000, e_loss: 0.3061
+Traceback (most recent call last):
+  File "main_timegan.py", line 221, in <module>
+    ori_data, generated_data, metrics = main(args)
+  File "main_timegan.py", line 94, in main
+    generated_data = timegan_conditional(ori_data, categories, parameters)
+  File "/home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py", line 216, in timegan_conditional
+    _, step_e_loss = sess.run([E0_solver, E_loss_T0], feed_dict={X: X_mb, T: T_mb, C: categories_one_hot[:batch_size]})
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/client/session.py", line 956, in run
+    run_metadata_ptr)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/client/session.py", line 1180, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/client/session.py", line 1359, in _do_run
+    run_metadata)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/client/session.py", line 1365, in _do_call
+    return fn(*args)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/client/session.py", line 1350, in _run_fn
+    target_list, run_metadata)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/client/session.py", line 1443, in _call_tf_sessionrun
+    run_metadata)
+KeyboardInterrupt

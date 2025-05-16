@@ -1,0 +1,37 @@
+2024-09-04 12:53:12,508 INFO    MainThread:7878 [wandb_setup.py:_flush():76] Current SDK version is 0.17.7
+2024-09-04 12:53:12,508 INFO    MainThread:7878 [wandb_setup.py:_flush():76] Configure stats pid to 7878
+2024-09-04 12:53:12,508 INFO    MainThread:7878 [wandb_setup.py:_flush():76] Loading settings from /home/langleman/.config/wandb/settings
+2024-09-04 12:53:12,508 INFO    MainThread:7878 [wandb_setup.py:_flush():76] Loading settings from /home/langleman/Conditional_TimeGAN/wandb/settings
+2024-09-04 12:53:12,508 INFO    MainThread:7878 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-09-04 12:53:12,508 INFO    MainThread:7878 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-09-04 12:53:12,508 INFO    MainThread:7878 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main_timegan.py', 'program_abspath': '/home/langleman/Conditional_TimeGAN/main_timegan.py', 'program': 'main_timegan.py'}
+2024-09-04 12:53:12,508 INFO    MainThread:7878 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-09-04 12:53:12,509 INFO    MainThread:7878 [wandb_init.py:_log_setup():524] Logging user logs to /home/langleman/Conditional_TimeGAN/wandb/run-20240904_125312-yyh9j0ft/logs/debug.log
+2024-09-04 12:53:12,509 INFO    MainThread:7878 [wandb_init.py:_log_setup():525] Logging internal logs to /home/langleman/Conditional_TimeGAN/wandb/run-20240904_125312-yyh9j0ft/logs/debug-internal.log
+2024-09-04 12:53:12,509 INFO    MainThread:7878 [wandb_init.py:init():607] calling init triggers
+2024-09-04 12:53:12,509 INFO    MainThread:7878 [wandb_init.py:init():615] wandb.init called with sweep_config: {}
+config: {}
+2024-09-04 12:53:12,509 INFO    MainThread:7878 [wandb_init.py:init():657] starting backend
+2024-09-04 12:53:12,509 INFO    MainThread:7878 [wandb_init.py:init():661] setting up manager
+2024-09-04 12:53:12,513 INFO    MainThread:7878 [backend.py:_multiprocessing_setup():107] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-09-04 12:53:12,539 INFO    MainThread:7878 [wandb_init.py:init():669] backend started and connected
+2024-09-04 12:53:12,547 INFO    MainThread:7878 [wandb_init.py:init():764] updated telemetry
+2024-09-04 12:53:12,568 INFO    MainThread:7878 [wandb_init.py:init():797] communicating run to backend with 90.0 second timeout
+2024-09-04 12:53:12,790 WARNING MainThread:7878 [wandb_init.py:init():1229] interrupted
+Traceback (most recent call last):
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 1225, in init
+    return wi.init()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 803, in init
+    cancel=True,
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2024-09-04 12:53:15,412 WARNING MsgRouterThr:7878 [router.py:message_loop():77] message_loop has been closed

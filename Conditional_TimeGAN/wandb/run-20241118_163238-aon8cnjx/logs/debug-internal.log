@@ -1,0 +1,284 @@
+2024-11-18 16:32:38,877 INFO    StreamThr :22710 [internal.py:wandb_internal():88] W&B internal server running at pid: 22710, started at: 2024-11-18 16:32:38.876331
+2024-11-18 16:32:38,885 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: status
+2024-11-18 16:32:38,890 INFO    WriterThread:22710 [datastore.py:open_for_write():87] open: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/run-aon8cnjx.wandb
+2024-11-18 16:32:38,891 DEBUG   SenderThread:22710 [sender.py:send():391] send: header
+2024-11-18 16:32:38,907 DEBUG   SenderThread:22710 [sender.py:send():391] send: run
+2024-11-18 16:32:39,474 INFO    SenderThread:22710 [dir_watcher.py:__init__():211] watching files in: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files
+2024-11-18 16:32:39,474 INFO    SenderThread:22710 [sender.py:_start_run_threads():1203] run started: aon8cnjx with start time 1731915158.875538
+2024-11-18 16:32:39,487 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: check_version
+2024-11-18 16:32:39,488 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: check_version
+2024-11-18 16:32:39,589 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: run_start
+2024-11-18 16:32:39,610 DEBUG   HandlerThread:22710 [system_info.py:__init__():26] System info init
+2024-11-18 16:32:39,610 DEBUG   HandlerThread:22710 [system_info.py:__init__():41] System info init done
+2024-11-18 16:32:39,610 INFO    HandlerThread:22710 [system_monitor.py:start():194] Starting system monitor
+2024-11-18 16:32:39,610 INFO    SystemMonitor:22710 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-11-18 16:32:39,611 INFO    HandlerThread:22710 [system_monitor.py:probe():214] Collecting system info
+2024-11-18 16:32:39,612 INFO    SystemMonitor:22710 [interfaces.py:start():188] Started cpu monitoring
+2024-11-18 16:32:39,613 INFO    SystemMonitor:22710 [interfaces.py:start():188] Started disk monitoring
+2024-11-18 16:32:39,616 INFO    SystemMonitor:22710 [interfaces.py:start():188] Started gpu monitoring
+2024-11-18 16:32:39,616 INFO    SystemMonitor:22710 [interfaces.py:start():188] Started memory monitoring
+2024-11-18 16:32:39,617 INFO    SystemMonitor:22710 [interfaces.py:start():188] Started network monitoring
+2024-11-18 16:32:39,634 DEBUG   HandlerThread:22710 [system_info.py:probe():152] Probing system
+2024-11-18 16:32:39,644 DEBUG   HandlerThread:22710 [system_info.py:_probe_git():137] Probing git
+2024-11-18 16:32:39,668 DEBUG   HandlerThread:22710 [system_info.py:_probe_git():145] Probing git done
+2024-11-18 16:32:39,668 DEBUG   HandlerThread:22710 [system_info.py:probe():200] Probing system done
+2024-11-18 16:32:39,668 DEBUG   HandlerThread:22710 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-1160.83.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core', 'python': '3.7.12', 'heartbeatAt': '2024-11-18T07:32:39.634436', 'startedAt': '2024-11-18T07:32:38.863908', 'docker': None, 'cuda': None, 'args': ('--hidden_dim', '18', '--num_layer', '18', '--batch_size', '156', '--iteration', '1'), 'state': 'running', 'program': 'main_timegan.py', 'codePathLocal': 'main_timegan.py', 'codePath': 'main_timegan.py', 'git': {'remote': 'https://github.com/jsyoon0823/TimeGAN.git', 'commit': '8f6181cb9b9d2fa0c930cd902411d9ac8a308e07'}, 'email': 'minsu97@gmail.com', 'root': '/home/langleman/Conditional_TimeGAN', 'host': '101-49.ycv.kr', 'username': 'langleman', 'executable': '/home/langleman/.conda/envs/timegan/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 1299.2190000000003, 'min': 1200.0, 'max': 4500.0}, 'cpu_freq_per_core': [{'current': 1429.956, 'min': 1200.0, 'max': 4500.0}, {'current': 1199.835, 'min': 1200.0, 'max': 4500.0}, {'current': 1214.062, 'min': 1200.0, 'max': 4500.0}, {'current': 1253.131, 'min': 1200.0, 'max': 4500.0}, {'current': 1199.835, 'min': 1200.0, 'max': 4500.0}, {'current': 1253.582, 'min': 1200.0, 'max': 4500.0}, {'current': 1199.835, 'min': 1200.0, 'max': 4500.0}, {'current': 1891.101, 'min': 1200.0, 'max': 4500.0}, {'current': 1347.302, 'min': 1200.0, 'max': 4500.0}, {'current': 1199.835, 'min': 1200.0, 'max': 4500.0}, {'current': 1200.061, 'min': 1200.0, 'max': 4500.0}, {'current': 1202.093, 'min': 1200.0, 'max': 4500.0}], 'disk': {'/': {'total': 49.9755859375, 'used': 39.13618850708008}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 125.26838302612305}}
+2024-11-18 16:32:39,669 INFO    HandlerThread:22710 [system_monitor.py:probe():224] Finished collecting system info
+2024-11-18 16:32:39,669 INFO    HandlerThread:22710 [system_monitor.py:probe():227] Publishing system info
+2024-11-18 16:32:39,669 DEBUG   HandlerThread:22710 [system_info.py:_save_conda():210] Saving list of conda packages installed into the current environment
+2024-11-18 16:32:40,478 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/conda-environment.yaml
+2024-11-18 16:32:42,162 DEBUG   HandlerThread:22710 [system_info.py:_save_conda():224] Saving conda packages done
+2024-11-18 16:32:42,163 INFO    HandlerThread:22710 [system_monitor.py:probe():229] Finished publishing system info
+2024-11-18 16:32:42,176 DEBUG   SenderThread:22710 [sender.py:send():391] send: files
+2024-11-18 16:32:42,177 INFO    SenderThread:22710 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-11-18 16:32:42,238 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: python_packages
+2024-11-18 16:32:42,239 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: python_packages
+2024-11-18 16:32:42,240 DEBUG   SenderThread:22710 [sender.py:send():391] send: telemetry
+2024-11-18 16:32:42,243 DEBUG   SenderThread:22710 [sender.py:send():391] send: telemetry
+2024-11-18 16:32:42,244 DEBUG   SenderThread:22710 [sender.py:send():391] send: run
+2024-11-18 16:32:42,248 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-18 16:32:42,248 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:42,476 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/conda-environment.yaml
+2024-11-18 16:32:42,477 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/config.yaml
+2024-11-18 16:32:42,477 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/requirements.txt
+2024-11-18 16:32:42,477 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/wandb-metadata.json
+2024-11-18 16:32:42,525 INFO    SenderThread:22710 [sender.py:send_run():1047] updated run: aon8cnjx
+2024-11-18 16:32:42,525 DEBUG   SenderThread:22710 [sender.py:send():391] send: telemetry
+2024-11-18 16:32:42,526 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: stop_status
+2024-11-18 16:32:42,802 DEBUG   SenderThread:22710 [sender.py:send():391] send: telemetry
+2024-11-18 16:32:42,803 DEBUG   SenderThread:22710 [sender.py:send():391] send: telemetry
+2024-11-18 16:32:42,804 DEBUG   SenderThread:22710 [sender.py:send():391] send: config
+2024-11-18 16:32:42,973 INFO    wandb-upload_0:22710 [upload_job.py:push():130] Uploaded file /tmp/tmp7pcvk819wandb/fpqwlvbq-wandb-metadata.json
+2024-11-18 16:32:43,246 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:43,477 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/output.log
+2024-11-18 16:32:44,123 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 16:32:44,244 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:45,244 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:45,478 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/output.log
+2024-11-18 16:32:46,244 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:47,245 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:48,354 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:49,247 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 16:32:49,356 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:49,481 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/output.log
+2024-11-18 16:32:50,355 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:51,357 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:52,358 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:53,358 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:54,249 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 16:32:54,358 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:55,361 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:56,359 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:57,242 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-18 16:32:57,243 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: stop_status
+2024-11-18 16:32:57,361 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:58,362 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:59,361 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:32:59,525 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 16:33:00,363 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:01,499 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:02,502 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:03,500 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:04,501 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:05,249 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 16:33:05,504 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:06,503 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:07,504 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:08,504 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:09,505 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:10,506 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:11,254 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 16:33:11,497 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/config.yaml
+2024-11-18 16:33:11,505 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:12,242 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-18 16:33:12,243 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: stop_status
+2024-11-18 16:33:12,505 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:13,508 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:14,509 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:15,509 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:16,500 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 16:33:16,508 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:17,509 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:18,511 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:19,506 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:20,506 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:21,505 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/output.log
+2024-11-18 16:33:21,506 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:21,991 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 16:33:22,506 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:23,507 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:24,507 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:25,508 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:26,508 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:27,240 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-18 16:33:27,241 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: stop_status
+2024-11-18 16:33:27,509 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:27,536 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 16:33:28,509 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:29,510 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:30,510 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:31,511 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:32,511 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:33,247 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 16:33:33,511 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:34,512 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:35,511 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:36,512 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:37,512 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:38,355 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-18 16:33:38,358 DEBUG   SenderThread:22710 [sender.py:send():391] send: history
+2024-11-18 16:33:38,358 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: summary_record
+2024-11-18 16:33:38,361 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 16:33:38,362 INFO    SenderThread:22710 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-18 16:33:38,517 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/wandb-summary.json
+2024-11-18 16:33:38,520 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:39,512 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:39,619 DEBUG   SystemMonitor:22710 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-11-18 16:33:39,620 DEBUG   SenderThread:22710 [sender.py:send():391] send: stats
+2024-11-18 16:33:40,513 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:41,514 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:41,518 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/output.log
+2024-11-18 16:33:42,240 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-18 16:33:42,241 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: stop_status
+2024-11-18 16:33:42,526 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:43,040 DEBUG   SenderThread:22710 [sender.py:send():391] send: exit
+2024-11-18 16:33:43,040 INFO    SenderThread:22710 [sender.py:send_exit():598] handling exit code: 255
+2024-11-18 16:33:43,040 INFO    SenderThread:22710 [sender.py:send_exit():600] handling runtime: 63
+2024-11-18 16:33:43,041 INFO    SenderThread:22710 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-18 16:33:43,041 INFO    SenderThread:22710 [sender.py:send_exit():606] send defer
+2024-11-18 16:33:43,042 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:43,042 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 0
+2024-11-18 16:33:43,042 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:43,042 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-11-18 16:33:43,043 INFO    SenderThread:22710 [sender.py:transition_state():626] send defer: 1
+2024-11-18 16:33:43,043 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:43,043 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 1
+2024-11-18 16:33:43,043 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:43,044 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-11-18 16:33:43,044 INFO    SenderThread:22710 [sender.py:transition_state():626] send defer: 2
+2024-11-18 16:33:43,044 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:43,044 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 2
+2024-11-18 16:33:43,044 INFO    HandlerThread:22710 [system_monitor.py:finish():203] Stopping system monitor
+2024-11-18 16:33:43,045 DEBUG   SystemMonitor:22710 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-11-18 16:33:43,045 INFO    HandlerThread:22710 [interfaces.py:finish():200] Joined cpu monitor
+2024-11-18 16:33:43,046 DEBUG   SystemMonitor:22710 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-11-18 16:33:43,046 INFO    HandlerThread:22710 [interfaces.py:finish():200] Joined disk monitor
+2024-11-18 16:33:43,116 INFO    HandlerThread:22710 [interfaces.py:finish():200] Joined gpu monitor
+2024-11-18 16:33:43,116 INFO    HandlerThread:22710 [interfaces.py:finish():200] Joined memory monitor
+2024-11-18 16:33:43,116 INFO    HandlerThread:22710 [interfaces.py:finish():200] Joined network monitor
+2024-11-18 16:33:43,117 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:43,117 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-11-18 16:33:43,117 INFO    SenderThread:22710 [sender.py:transition_state():626] send defer: 3
+2024-11-18 16:33:43,118 DEBUG   SenderThread:22710 [sender.py:send():391] send: stats
+2024-11-18 16:33:43,118 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:43,119 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 3
+2024-11-18 16:33:43,119 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:43,119 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-11-18 16:33:43,119 INFO    SenderThread:22710 [sender.py:transition_state():626] send defer: 4
+2024-11-18 16:33:43,119 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:43,120 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 4
+2024-11-18 16:33:43,120 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:43,120 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-11-18 16:33:43,120 INFO    SenderThread:22710 [sender.py:transition_state():626] send defer: 5
+2024-11-18 16:33:43,120 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:43,120 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 5
+2024-11-18 16:33:43,121 DEBUG   SenderThread:22710 [sender.py:send():391] send: summary
+2024-11-18 16:33:43,121 INFO    SenderThread:22710 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-18 16:33:43,122 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:43,122 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-11-18 16:33:43,122 INFO    SenderThread:22710 [sender.py:transition_state():626] send defer: 6
+2024-11-18 16:33:43,122 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:43,123 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 6
+2024-11-18 16:33:43,123 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:43,123 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-11-18 16:33:43,123 INFO    SenderThread:22710 [sender.py:transition_state():626] send defer: 7
+2024-11-18 16:33:43,123 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 16:33:43,124 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:43,124 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 7
+2024-11-18 16:33:43,124 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:43,124 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-11-18 16:33:43,520 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/wandb-summary.json
+2024-11-18 16:33:44,040 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-18 16:33:44,903 INFO    SenderThread:22710 [sender.py:transition_state():626] send defer: 8
+2024-11-18 16:33:44,904 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: poll_exit
+2024-11-18 16:33:44,904 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:44,905 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 8
+2024-11-18 16:33:44,905 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:44,905 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-11-18 16:33:44,906 INFO    SenderThread:22710 [job_builder.py:build():443] Attempting to build job artifact
+2024-11-18 16:33:44,906 INFO    SenderThread:22710 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-11-18 16:33:44,958 INFO    SenderThread:22710 [job_builder.py:build():548] adding wandb-job metadata file
+2024-11-18 16:33:44,964 INFO    SenderThread:22710 [sender.py:transition_state():626] send defer: 9
+2024-11-18 16:33:44,966 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:44,966 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 9
+2024-11-18 16:33:44,967 DEBUG   SenderThread:22710 [sender.py:send():391] send: artifact
+2024-11-18 16:33:45,042 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-18 16:33:45,522 INFO    Thread-12 :22710 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/output.log
+2024-11-18 16:33:46,062 INFO    SenderThread:22710 [sender.py:send_artifact():1549] sent artifact job-https___github.com_jsyoon0823_TimeGAN.git_main_timegan.py - {'id': 'QXJ0aWZhY3Q6MTIwODk1MjEyNg==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxNzU0MjA1NA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTI1NzExMzI2MA==', 'versionIndex': 10}}}
+2024-11-18 16:33:46,063 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:46,063 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-11-18 16:33:46,063 INFO    SenderThread:22710 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-11-18 16:33:46,523 INFO    SenderThread:22710 [dir_watcher.py:finish():388] scan: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files
+2024-11-18 16:33:46,524 INFO    SenderThread:22710 [dir_watcher.py:finish():402] scan save: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/config.yaml config.yaml
+2024-11-18 16:33:46,524 INFO    SenderThread:22710 [dir_watcher.py:finish():402] scan save: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/conda-environment.yaml conda-environment.yaml
+2024-11-18 16:33:46,530 INFO    SenderThread:22710 [dir_watcher.py:finish():402] scan save: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/wandb-metadata.json wandb-metadata.json
+2024-11-18 16:33:46,530 INFO    SenderThread:22710 [dir_watcher.py:finish():402] scan save: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/requirements.txt requirements.txt
+2024-11-18 16:33:46,530 INFO    SenderThread:22710 [dir_watcher.py:finish():402] scan save: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/output.log output.log
+2024-11-18 16:33:46,531 INFO    SenderThread:22710 [dir_watcher.py:finish():402] scan save: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/wandb-summary.json wandb-summary.json
+2024-11-18 16:33:46,538 INFO    SenderThread:22710 [sender.py:transition_state():626] send defer: 10
+2024-11-18 16:33:46,544 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: poll_exit
+2024-11-18 16:33:46,553 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:46,555 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 10
+2024-11-18 16:33:46,556 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:46,557 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-11-18 16:33:46,557 INFO    SenderThread:22710 [file_pusher.py:finish():169] shutting down file pusher
+2024-11-18 16:33:47,006 INFO    wandb-upload_0:22710 [upload_job.py:push():130] Uploaded file /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/config.yaml
+2024-11-18 16:33:47,045 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-18 16:33:47,046 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: poll_exit
+2024-11-18 16:33:47,105 INFO    wandb-upload_1:22710 [upload_job.py:push():130] Uploaded file /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/conda-environment.yaml
+2024-11-18 16:33:47,169 INFO    wandb-upload_2:22710 [upload_job.py:push():130] Uploaded file /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/requirements.txt
+2024-11-18 16:33:47,172 INFO    wandb-upload_3:22710 [upload_job.py:push():130] Uploaded file /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/output.log
+2024-11-18 16:33:47,174 INFO    wandb-upload_5:22710 [upload_job.py:push():130] Uploaded file /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/files/wandb-summary.json
+2024-11-18 16:33:47,375 INFO    Thread-11 :22710 [sender.py:transition_state():626] send defer: 11
+2024-11-18 16:33:47,376 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:47,376 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 11
+2024-11-18 16:33:47,377 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:47,377 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-11-18 16:33:47,377 INFO    SenderThread:22710 [file_pusher.py:join():175] waiting for file pusher
+2024-11-18 16:33:47,377 INFO    SenderThread:22710 [sender.py:transition_state():626] send defer: 12
+2024-11-18 16:33:47,378 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:47,378 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 12
+2024-11-18 16:33:47,379 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:47,379 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-11-18 16:33:47,379 INFO    SenderThread:22710 [file_stream.py:finish():601] file stream finish called
+2024-11-18 16:33:48,036 INFO    SenderThread:22710 [file_stream.py:finish():605] file stream finish is done
+2024-11-18 16:33:48,036 INFO    SenderThread:22710 [sender.py:transition_state():626] send defer: 13
+2024-11-18 16:33:48,036 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:48,037 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 13
+2024-11-18 16:33:48,037 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:48,038 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-11-18 16:33:48,038 INFO    SenderThread:22710 [sender.py:transition_state():626] send defer: 14
+2024-11-18 16:33:48,039 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 16:33:48,039 DEBUG   SenderThread:22710 [sender.py:send():391] send: final
+2024-11-18 16:33:48,039 INFO    HandlerThread:22710 [handler.py:handle_request_defer():184] handle defer: 14
+2024-11-18 16:33:48,039 DEBUG   SenderThread:22710 [sender.py:send():391] send: footer
+2024-11-18 16:33:48,040 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: defer
+2024-11-18 16:33:48,040 INFO    SenderThread:22710 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-11-18 16:33:48,041 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-18 16:33:48,042 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: poll_exit
+2024-11-18 16:33:48,043 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: server_info
+2024-11-18 16:33:48,044 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: server_info
+2024-11-18 16:33:48,049 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-18 16:33:48,051 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: get_summary
+2024-11-18 16:33:48,052 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: sampled_history
+2024-11-18 16:33:48,053 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 16:33:48,252 DEBUG   SenderThread:22710 [sender.py:send_request():418] send_request: poll_exit
+2024-11-18 16:33:48,253 INFO    MainThread:22710 [wandb_run.py:_footer_history_summary_info():4076] rendering history
+2024-11-18 16:33:48,254 INFO    MainThread:22710 [wandb_run.py:_footer_history_summary_info():4108] rendering summary
+2024-11-18 16:33:48,254 INFO    MainThread:22710 [wandb_run.py:_footer_sync_info():4035] logging synced files
+2024-11-18 16:33:48,255 DEBUG   HandlerThread:22710 [handler.py:handle_request():158] handle_request: shutdown
+2024-11-18 16:33:48,256 INFO    HandlerThread:22710 [handler.py:finish():880] shutting down handler
+2024-11-18 16:33:49,050 INFO    WriterThread:22710 [datastore.py:close():296] close: /home/langleman/Conditional_TimeGAN/wandb/run-20241118_163238-aon8cnjx/run-aon8cnjx.wandb
+2024-11-18 16:33:49,254 INFO    SenderThread:22710 [sender.py:finish():1631] shutting down sender
+2024-11-18 16:33:49,254 INFO    SenderThread:22710 [file_pusher.py:finish():169] shutting down file pusher
+2024-11-18 16:33:49,254 INFO    SenderThread:22710 [file_pusher.py:join():175] waiting for file pusher

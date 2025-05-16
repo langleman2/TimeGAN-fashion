@@ -1,0 +1,27 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+WARNING:tensorflow:From /home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py:26: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+Traceback (most recent call last):
+  File "main_timegan.py", line 221, in <module>
+    ori_data, generated_data, metrics = main(args)
+  File "main_timegan.py", line 94, in main
+    generated_data = timegan_conditional(ori_data, categories, parameters)
+  File "/home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py", line 63, in timegan_conditional
+    ori_data2, min_val2, max_val2 = MinMaxScaler(ori_data[12:])
+  File "/home/langleman/Conditional_TimeGAN/conditional_timegan_gpt.py", line 40, in MinMaxScaler
+    min_val = np.min(np.min(data, axis=0), axis=0)
+  File "<__array_function__ internals>", line 6, in amin
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 2880, in amin
+    keepdims=keepdims, initial=initial, where=where)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation minimum which has no identity
+ori_data shape : (24, 354)
+BL_weekly_new_train dataset is ready.
+24
+[[0.00423729 0.01016949 0.00508475 ... 0.27966102 0.35169492 0.3220339 ]
+ [0.01016949 0.00508475 0.00508475 ... 0.35169492 0.3220339  0.20084746]
+ [0.00508475 0.00508475 0.00423729 ... 0.3220339  0.20084746 0.08898305]
+ ...
+ [0.25631769 0.21119134 0.13357401 ... 0.47833935 0.33212996 0.47111913]
+ [0.21119134 0.13357401 0.28700361 ... 0.33212996 0.47111913 0.29061372]
+ [0.13357401 0.28700361 0.15162455 ... 0.47111913 0.29061372 0.25812274]]

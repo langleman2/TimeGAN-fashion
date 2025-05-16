@@ -1,0 +1,198 @@
+2024-08-27 14:13:09,884 INFO    StreamThr :42624 [internal.py:wandb_internal():88] W&B internal server running at pid: 42624, started at: 2024-08-27 14:13:09.882047
+2024-08-27 14:13:09,894 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: status
+2024-08-27 14:13:09,898 INFO    WriterThread:42624 [datastore.py:open_for_write():87] open: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/run-rfwd0ksm.wandb
+2024-08-27 14:13:09,898 DEBUG   SenderThread:42624 [sender.py:send():391] send: header
+2024-08-27 14:13:09,912 DEBUG   SenderThread:42624 [sender.py:send():391] send: run
+2024-08-27 14:13:10,497 INFO    SenderThread:42624 [dir_watcher.py:__init__():211] watching files in: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files
+2024-08-27 14:13:10,498 INFO    SenderThread:42624 [sender.py:_start_run_threads():1203] run started: rfwd0ksm with start time 1724735589.879911
+2024-08-27 14:13:10,499 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: check_version
+2024-08-27 14:13:10,500 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: check_version
+2024-08-27 14:13:10,569 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: run_start
+2024-08-27 14:13:10,576 DEBUG   HandlerThread:42624 [system_info.py:__init__():26] System info init
+2024-08-27 14:13:10,576 DEBUG   HandlerThread:42624 [system_info.py:__init__():41] System info init done
+2024-08-27 14:13:10,576 INFO    HandlerThread:42624 [system_monitor.py:start():194] Starting system monitor
+2024-08-27 14:13:10,576 INFO    SystemMonitor:42624 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-27 14:13:10,577 INFO    HandlerThread:42624 [system_monitor.py:probe():214] Collecting system info
+2024-08-27 14:13:10,578 INFO    SystemMonitor:42624 [interfaces.py:start():188] Started cpu monitoring
+2024-08-27 14:13:10,579 INFO    SystemMonitor:42624 [interfaces.py:start():188] Started disk monitoring
+2024-08-27 14:13:10,581 INFO    SystemMonitor:42624 [interfaces.py:start():188] Started gpu monitoring
+2024-08-27 14:13:10,581 INFO    SystemMonitor:42624 [interfaces.py:start():188] Started memory monitoring
+2024-08-27 14:13:10,582 INFO    SystemMonitor:42624 [interfaces.py:start():188] Started network monitoring
+2024-08-27 14:13:10,597 DEBUG   HandlerThread:42624 [system_info.py:probe():152] Probing system
+2024-08-27 14:13:10,606 DEBUG   HandlerThread:42624 [system_info.py:_probe_git():137] Probing git
+2024-08-27 14:13:10,628 DEBUG   HandlerThread:42624 [system_info.py:_probe_git():145] Probing git done
+2024-08-27 14:13:10,628 DEBUG   HandlerThread:42624 [system_info.py:probe():200] Probing system done
+2024-08-27 14:13:10,628 DEBUG   HandlerThread:42624 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-1160.83.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core', 'python': '3.7.12', 'heartbeatAt': '2024-08-27T05:13:10.597135', 'startedAt': '2024-08-27T05:13:09.870016', 'docker': None, 'cuda': None, 'args': ('--seq_len', '366', '--iteration', '10'), 'state': 'running', 'program': 'main_timegan.py', 'codePathLocal': 'main_timegan.py', 'codePath': 'main_timegan.py', 'git': {'remote': 'https://github.com/jsyoon0823/TimeGAN.git', 'commit': '8f6181cb9b9d2fa0c930cd902411d9ac8a308e07'}, 'email': 'minsu97@gmail.com', 'root': '/home/langleman/Conditional_TimeGAN', 'host': '101-49.ycv.kr', 'username': 'langleman', 'executable': '/home/langleman/.conda/envs/timegan/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2073.8348333333333, 'min': 1200.0, 'max': 4500.0}, 'cpu_freq_per_core': [{'current': 1826.062, 'min': 1200.0, 'max': 4500.0}, {'current': 1510.577, 'min': 1200.0, 'max': 4500.0}, {'current': 1546.484, 'min': 1200.0, 'max': 4500.0}, {'current': 2433.544, 'min': 1200.0, 'max': 4500.0}, {'current': 2015.985, 'min': 1200.0, 'max': 4500.0}, {'current': 3000.604, 'min': 1200.0, 'max': 4500.0}, {'current': 1751.538, 'min': 1200.0, 'max': 4500.0}, {'current': 1652.172, 'min': 1200.0, 'max': 4500.0}, {'current': 1586.456, 'min': 1200.0, 'max': 4500.0}, {'current': 2026.373, 'min': 1200.0, 'max': 4500.0}, {'current': 1909.167, 'min': 1200.0, 'max': 4500.0}, {'current': 3165.234, 'min': 1200.0, 'max': 4500.0}], 'disk': {'/': {'total': 49.9755859375, 'used': 37.37685012817383}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 125.26838302612305}}
+2024-08-27 14:13:10,629 INFO    HandlerThread:42624 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-27 14:13:10,629 INFO    HandlerThread:42624 [system_monitor.py:probe():227] Publishing system info
+2024-08-27 14:13:10,629 DEBUG   HandlerThread:42624 [system_info.py:_save_conda():210] Saving list of conda packages installed into the current environment
+2024-08-27 14:13:11,502 INFO    Thread-12 :42624 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/conda-environment.yaml
+2024-08-27 14:13:12,355 DEBUG   HandlerThread:42624 [system_info.py:_save_conda():224] Saving conda packages done
+2024-08-27 14:13:12,356 INFO    HandlerThread:42624 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-27 14:13:12,367 DEBUG   SenderThread:42624 [sender.py:send():391] send: files
+2024-08-27 14:13:12,368 INFO    SenderThread:42624 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-08-27 14:13:12,440 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-27 14:13:12,440 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: python_packages
+2024-08-27 14:13:12,441 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-27 14:13:12,442 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: stop_status
+2024-08-27 14:13:12,447 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 14:13:12,499 INFO    Thread-12 :42624 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/conda-environment.yaml
+2024-08-27 14:13:12,499 INFO    Thread-12 :42624 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/requirements.txt
+2024-08-27 14:13:12,499 INFO    Thread-12 :42624 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/wandb-metadata.json
+2024-08-27 14:13:12,724 DEBUG   SenderThread:42624 [sender.py:send():391] send: telemetry
+2024-08-27 14:13:12,724 DEBUG   SenderThread:42624 [sender.py:send():391] send: telemetry
+2024-08-27 14:13:12,725 DEBUG   SenderThread:42624 [sender.py:send():391] send: run
+2024-08-27 14:13:12,942 INFO    SenderThread:42624 [sender.py:send_run():1047] updated run: rfwd0ksm
+2024-08-27 14:13:12,942 DEBUG   SenderThread:42624 [sender.py:send():391] send: telemetry
+2024-08-27 14:13:12,944 DEBUG   SenderThread:42624 [sender.py:send():391] send: telemetry
+2024-08-27 14:13:12,944 DEBUG   SenderThread:42624 [sender.py:send():391] send: telemetry
+2024-08-27 14:13:13,204 INFO    wandb-upload_0:42624 [upload_job.py:push():130] Uploaded file /tmp/tmp6wxk0ydbwandb/s1n91a7d-wandb-metadata.json
+2024-08-27 14:13:13,274 DEBUG   SenderThread:42624 [sender.py:send():391] send: exit
+2024-08-27 14:13:13,274 INFO    SenderThread:42624 [sender.py:send_exit():598] handling exit code: 1
+2024-08-27 14:13:13,275 INFO    SenderThread:42624 [sender.py:send_exit():600] handling runtime: 2
+2024-08-27 14:13:13,278 INFO    SenderThread:42624 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-27 14:13:13,279 INFO    SenderThread:42624 [sender.py:send_exit():606] send defer
+2024-08-27 14:13:13,279 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:13,280 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 0
+2024-08-27 14:13:13,280 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:13,280 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-08-27 14:13:13,281 INFO    SenderThread:42624 [sender.py:transition_state():626] send defer: 1
+2024-08-27 14:13:13,281 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:13,281 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 1
+2024-08-27 14:13:13,282 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:13,282 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-08-27 14:13:13,282 INFO    SenderThread:42624 [sender.py:transition_state():626] send defer: 2
+2024-08-27 14:13:13,282 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:13,282 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 2
+2024-08-27 14:13:13,282 INFO    HandlerThread:42624 [system_monitor.py:finish():203] Stopping system monitor
+2024-08-27 14:13:13,283 DEBUG   SystemMonitor:42624 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-27 14:13:13,284 INFO    HandlerThread:42624 [interfaces.py:finish():200] Joined cpu monitor
+2024-08-27 14:13:13,284 DEBUG   SystemMonitor:42624 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-27 14:13:13,285 INFO    HandlerThread:42624 [interfaces.py:finish():200] Joined disk monitor
+2024-08-27 14:13:13,285 DEBUG   SystemMonitor:42624 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-27 14:13:13,381 INFO    HandlerThread:42624 [interfaces.py:finish():200] Joined gpu monitor
+2024-08-27 14:13:13,381 INFO    HandlerThread:42624 [interfaces.py:finish():200] Joined memory monitor
+2024-08-27 14:13:13,381 INFO    HandlerThread:42624 [interfaces.py:finish():200] Joined network monitor
+2024-08-27 14:13:13,382 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:13,382 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-08-27 14:13:13,382 INFO    SenderThread:42624 [sender.py:transition_state():626] send defer: 3
+2024-08-27 14:13:13,382 DEBUG   SenderThread:42624 [sender.py:send():391] send: stats
+2024-08-27 14:13:13,382 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:13,382 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 3
+2024-08-27 14:13:13,383 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:13,383 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-08-27 14:13:13,383 INFO    SenderThread:42624 [sender.py:transition_state():626] send defer: 4
+2024-08-27 14:13:13,383 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:13,383 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 4
+2024-08-27 14:13:13,383 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:13,383 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-08-27 14:13:13,383 INFO    SenderThread:42624 [sender.py:transition_state():626] send defer: 5
+2024-08-27 14:13:13,384 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:13,384 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 5
+2024-08-27 14:13:13,384 DEBUG   SenderThread:42624 [sender.py:send():391] send: summary
+2024-08-27 14:13:13,384 INFO    SenderThread:42624 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-27 14:13:13,385 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:13,385 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-08-27 14:13:13,385 INFO    SenderThread:42624 [sender.py:transition_state():626] send defer: 6
+2024-08-27 14:13:13,385 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:13,385 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 6
+2024-08-27 14:13:13,385 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:13,385 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-08-27 14:13:13,390 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: status_report
+2024-08-27 14:13:13,499 INFO    Thread-12 :42624 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/config.yaml
+2024-08-27 14:13:13,500 INFO    Thread-12 :42624 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/wandb-summary.json
+2024-08-27 14:13:13,500 INFO    Thread-12 :42624 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/output.log
+2024-08-27 14:13:13,771 INFO    SenderThread:42624 [sender.py:transition_state():626] send defer: 7
+2024-08-27 14:13:13,772 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:13,772 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 7
+2024-08-27 14:13:13,772 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:13,773 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-08-27 14:13:14,273 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-27 14:13:14,500 INFO    Thread-12 :42624 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/config.yaml
+2024-08-27 14:13:15,229 INFO    SenderThread:42624 [sender.py:transition_state():626] send defer: 8
+2024-08-27 14:13:15,229 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: poll_exit
+2024-08-27 14:13:15,230 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:15,231 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 8
+2024-08-27 14:13:15,232 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:15,232 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-08-27 14:13:15,232 INFO    SenderThread:42624 [job_builder.py:build():443] Attempting to build job artifact
+2024-08-27 14:13:15,233 INFO    SenderThread:42624 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-08-27 14:13:15,282 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-27 14:13:15,287 INFO    SenderThread:42624 [job_builder.py:build():548] adding wandb-job metadata file
+2024-08-27 14:13:15,292 INFO    SenderThread:42624 [sender.py:transition_state():626] send defer: 9
+2024-08-27 14:13:15,293 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: poll_exit
+2024-08-27 14:13:15,293 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:15,294 DEBUG   SenderThread:42624 [sender.py:send():391] send: artifact
+2024-08-27 14:13:15,294 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 9
+2024-08-27 14:13:15,501 INFO    Thread-12 :42624 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/output.log
+2024-08-27 14:13:16,284 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-27 14:13:16,847 INFO    wandb-upload_1:42624 [upload_job.py:push():88] Uploaded file /home/langleman/.local/share/wandb/artifacts/staging/tmpppb1zvn_
+2024-08-27 14:13:16,922 INFO    wandb-upload_2:42624 [upload_job.py:push():88] Uploaded file /tmp/tmpc8ecw5dy/wandb-job.json
+2024-08-27 14:13:18,221 INFO    SenderThread:42624 [sender.py:send_artifact():1549] sent artifact job-https___github.com_jsyoon0823_TimeGAN.git_main_timegan.py - {'id': 'QXJ0aWZhY3Q6MTE2NzEzMTkwMQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxNzU0MjA1NA==', 'latestArtifact': None}}
+2024-08-27 14:13:18,221 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:18,221 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-08-27 14:13:18,221 INFO    SenderThread:42624 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-08-27 14:13:18,504 INFO    SenderThread:42624 [dir_watcher.py:finish():388] scan: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files
+2024-08-27 14:13:18,505 INFO    SenderThread:42624 [dir_watcher.py:finish():402] scan save: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/config.yaml config.yaml
+2024-08-27 14:13:18,505 INFO    SenderThread:42624 [dir_watcher.py:finish():402] scan save: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/conda-environment.yaml conda-environment.yaml
+2024-08-27 14:13:18,513 INFO    SenderThread:42624 [dir_watcher.py:finish():402] scan save: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/wandb-metadata.json wandb-metadata.json
+2024-08-27 14:13:18,514 INFO    SenderThread:42624 [dir_watcher.py:finish():402] scan save: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/requirements.txt requirements.txt
+2024-08-27 14:13:18,515 INFO    SenderThread:42624 [dir_watcher.py:finish():402] scan save: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/output.log output.log
+2024-08-27 14:13:18,532 INFO    SenderThread:42624 [dir_watcher.py:finish():402] scan save: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/wandb-summary.json wandb-summary.json
+2024-08-27 14:13:18,539 INFO    SenderThread:42624 [sender.py:transition_state():626] send defer: 10
+2024-08-27 14:13:18,540 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: poll_exit
+2024-08-27 14:13:18,541 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:18,546 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 10
+2024-08-27 14:13:18,547 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:18,548 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-08-27 14:13:18,548 INFO    SenderThread:42624 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-27 14:13:18,976 INFO    wandb-upload_3:42624 [upload_job.py:push():130] Uploaded file /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/config.yaml
+2024-08-27 14:13:19,014 INFO    wandb-upload_4:42624 [upload_job.py:push():130] Uploaded file /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/conda-environment.yaml
+2024-08-27 14:13:19,212 INFO    wandb-upload_6:42624 [upload_job.py:push():130] Uploaded file /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/output.log
+2024-08-27 14:13:19,260 INFO    wandb-upload_1:42624 [upload_job.py:push():130] Uploaded file /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/wandb-summary.json
+2024-08-27 14:13:19,263 INFO    wandb-upload_5:42624 [upload_job.py:push():130] Uploaded file /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/files/requirements.txt
+2024-08-27 14:13:19,289 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-27 14:13:19,290 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: poll_exit
+2024-08-27 14:13:19,464 INFO    Thread-11 :42624 [sender.py:transition_state():626] send defer: 11
+2024-08-27 14:13:19,465 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:19,465 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 11
+2024-08-27 14:13:19,467 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:19,467 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-08-27 14:13:19,467 INFO    SenderThread:42624 [file_pusher.py:join():175] waiting for file pusher
+2024-08-27 14:13:19,468 INFO    SenderThread:42624 [sender.py:transition_state():626] send defer: 12
+2024-08-27 14:13:19,468 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:19,469 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 12
+2024-08-27 14:13:19,469 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:19,469 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-08-27 14:13:19,470 INFO    SenderThread:42624 [file_stream.py:finish():601] file stream finish called
+2024-08-27 14:13:19,670 INFO    SenderThread:42624 [file_stream.py:finish():605] file stream finish is done
+2024-08-27 14:13:19,670 INFO    SenderThread:42624 [sender.py:transition_state():626] send defer: 13
+2024-08-27 14:13:19,671 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:19,671 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 13
+2024-08-27 14:13:19,672 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:19,672 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-08-27 14:13:19,672 INFO    SenderThread:42624 [sender.py:transition_state():626] send defer: 14
+2024-08-27 14:13:19,673 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: defer
+2024-08-27 14:13:19,673 DEBUG   SenderThread:42624 [sender.py:send():391] send: final
+2024-08-27 14:13:19,673 INFO    HandlerThread:42624 [handler.py:handle_request_defer():184] handle defer: 14
+2024-08-27 14:13:19,674 DEBUG   SenderThread:42624 [sender.py:send():391] send: footer
+2024-08-27 14:13:19,675 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: defer
+2024-08-27 14:13:19,675 INFO    SenderThread:42624 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-08-27 14:13:19,676 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-27 14:13:19,677 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: poll_exit
+2024-08-27 14:13:19,679 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: server_info
+2024-08-27 14:13:19,680 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: server_info
+2024-08-27 14:13:19,685 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-27 14:13:19,687 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: get_summary
+2024-08-27 14:13:19,688 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: sampled_history
+2024-08-27 14:13:19,689 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-27 14:13:19,874 DEBUG   SenderThread:42624 [sender.py:send_request():418] send_request: poll_exit
+2024-08-27 14:13:19,876 INFO    MainThread:42624 [wandb_run.py:_footer_history_summary_info():4076] rendering history
+2024-08-27 14:13:19,876 INFO    MainThread:42624 [wandb_run.py:_footer_history_summary_info():4108] rendering summary
+2024-08-27 14:13:19,876 INFO    MainThread:42624 [wandb_run.py:_footer_sync_info():4035] logging synced files
+2024-08-27 14:13:19,878 DEBUG   HandlerThread:42624 [handler.py:handle_request():158] handle_request: shutdown
+2024-08-27 14:13:19,878 INFO    HandlerThread:42624 [handler.py:finish():880] shutting down handler
+2024-08-27 14:13:20,686 INFO    WriterThread:42624 [datastore.py:close():296] close: /home/langleman/Conditional_TimeGAN/wandb/run-20240827_141309-rfwd0ksm/run-rfwd0ksm.wandb
+2024-08-27 14:13:20,875 INFO    SenderThread:42624 [sender.py:finish():1631] shutting down sender
+2024-08-27 14:13:20,875 INFO    SenderThread:42624 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-27 14:13:20,875 INFO    SenderThread:42624 [file_pusher.py:join():175] waiting for file pusher

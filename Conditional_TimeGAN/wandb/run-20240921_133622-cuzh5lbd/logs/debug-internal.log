@@ -1,0 +1,19 @@
+2024-09-21 13:36:22,055 INFO    StreamThr :53240 [internal.py:wandb_internal():88] W&B internal server running at pid: 53240, started at: 2024-09-21 13:36:22.054207
+2024-09-21 13:36:22,064 DEBUG   HandlerThread:53240 [handler.py:handle_request():158] handle_request: status
+2024-09-21 13:36:22,068 INFO    WriterThread:53240 [datastore.py:open_for_write():87] open: /home/langleman/Conditional_TimeGAN/wandb/run-20240921_133622-cuzh5lbd/run-cuzh5lbd.wandb
+2024-09-21 13:36:22,069 DEBUG   SenderThread:53240 [sender.py:send():391] send: header
+2024-09-21 13:36:22,085 DEBUG   SenderThread:53240 [sender.py:send():391] send: run
+2024-09-21 13:36:22,231 DEBUG   HandlerThread:53240 [handler.py:handle_request():158] handle_request: shutdown
+2024-09-21 13:36:22,232 INFO    HandlerThread:53240 [handler.py:finish():880] shutting down handler
+2024-09-21 13:36:22,703 INFO    SenderThread:53240 [dir_watcher.py:__init__():211] watching files in: /home/langleman/Conditional_TimeGAN/wandb/run-20240921_133622-cuzh5lbd/files
+2024-09-21 13:36:22,703 INFO    SenderThread:53240 [sender.py:_start_run_threads():1203] run started: cuzh5lbd with start time 1726893382.053035
+2024-09-21 13:36:22,703 INFO    SenderThread:53240 [sender.py:finish():1631] shutting down sender
+2024-09-21 13:36:22,703 INFO    SenderThread:53240 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-21 13:36:23,086 INFO    WriterThread:53240 [datastore.py:close():296] close: /home/langleman/Conditional_TimeGAN/wandb/run-20240921_133622-cuzh5lbd/run-cuzh5lbd.wandb
+2024-09-21 13:36:23,704 INFO    SenderThread:53240 [dir_watcher.py:finish():388] scan: /home/langleman/Conditional_TimeGAN/wandb/run-20240921_133622-cuzh5lbd/files
+2024-09-21 13:36:23,705 INFO    SenderThread:53240 [dir_watcher.py:finish():402] scan save: /home/langleman/Conditional_TimeGAN/wandb/run-20240921_133622-cuzh5lbd/files/config.yaml config.yaml
+2024-09-21 13:36:23,705 INFO    SenderThread:53240 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-21 13:36:23,705 INFO    SenderThread:53240 [file_pusher.py:join():175] waiting for file pusher
+2024-09-21 13:36:24,469 INFO    wandb-upload_0:53240 [upload_job.py:push():130] Uploaded file /home/langleman/Conditional_TimeGAN/wandb/run-20240921_133622-cuzh5lbd/files/config.yaml
+2024-09-21 13:36:24,708 INFO    SenderThread:53240 [file_stream.py:finish():601] file stream finish called
+2024-09-21 13:36:25,065 INFO    SenderThread:53240 [file_stream.py:finish():605] file stream finish is done
