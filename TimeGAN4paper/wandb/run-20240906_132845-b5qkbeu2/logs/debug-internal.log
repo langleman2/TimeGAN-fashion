@@ -1,0 +1,714 @@
+2024-09-06 13:28:45,729 INFO    StreamThr :5672 [internal.py:wandb_internal():88] W&B internal server running at pid: 5672, started at: 2024-09-06 13:28:45.728211
+2024-09-06 13:28:45,734 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status
+2024-09-06 13:28:45,737 INFO    WriterThread:5672 [datastore.py:open_for_write():87] open: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/run-b5qkbeu2.wandb
+2024-09-06 13:28:45,738 DEBUG   SenderThread:5672 [sender.py:send():391] send: header
+2024-09-06 13:28:45,748 DEBUG   SenderThread:5672 [sender.py:send():391] send: run
+2024-09-06 13:28:46,273 INFO    SenderThread:5672 [dir_watcher.py:__init__():211] watching files in: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files
+2024-09-06 13:28:46,273 INFO    SenderThread:5672 [sender.py:_start_run_threads():1203] run started: b5qkbeu2 with start time 1725596925.727985
+2024-09-06 13:28:46,281 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: check_version
+2024-09-06 13:28:46,281 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: check_version
+2024-09-06 13:28:46,354 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: run_start
+2024-09-06 13:28:46,360 DEBUG   HandlerThread:5672 [system_info.py:__init__():26] System info init
+2024-09-06 13:28:46,360 DEBUG   HandlerThread:5672 [system_info.py:__init__():41] System info init done
+2024-09-06 13:28:46,360 INFO    HandlerThread:5672 [system_monitor.py:start():194] Starting system monitor
+2024-09-06 13:28:46,361 INFO    SystemMonitor:5672 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-06 13:28:46,361 INFO    HandlerThread:5672 [system_monitor.py:probe():214] Collecting system info
+2024-09-06 13:28:46,362 INFO    SystemMonitor:5672 [interfaces.py:start():188] Started cpu monitoring
+2024-09-06 13:28:46,363 INFO    SystemMonitor:5672 [interfaces.py:start():188] Started disk monitoring
+2024-09-06 13:28:46,364 INFO    SystemMonitor:5672 [interfaces.py:start():188] Started gpu monitoring
+2024-09-06 13:28:46,365 INFO    SystemMonitor:5672 [interfaces.py:start():188] Started memory monitoring
+2024-09-06 13:28:46,366 INFO    SystemMonitor:5672 [interfaces.py:start():188] Started network monitoring
+2024-09-06 13:28:46,377 DEBUG   HandlerThread:5672 [system_info.py:probe():152] Probing system
+2024-09-06 13:28:46,384 DEBUG   HandlerThread:5672 [system_info.py:_probe_git():137] Probing git
+2024-09-06 13:28:46,402 DEBUG   HandlerThread:5672 [system_info.py:_probe_git():145] Probing git done
+2024-09-06 13:28:46,402 DEBUG   HandlerThread:5672 [system_info.py:probe():200] Probing system done
+2024-09-06 13:28:46,403 DEBUG   HandlerThread:5672 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-1160.83.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core', 'python': '3.7.12', 'heartbeatAt': '2024-09-06T04:28:46.377374', 'startedAt': '2024-09-06T04:28:45.723713', 'docker': None, 'cuda': None, 'args': ('--iteration', '1', '--cat', 'BL', '--seq_len', '354'), 'state': 'running', 'program': 'main_timegan.py', 'codePathLocal': 'main_timegan.py', 'codePath': 'main_timegan.py', 'git': {'remote': 'https://github.com/langleman/TimeGAN-fashion.git', 'commit': '0b20a7e863d195d6ec369e63432d9c0da4f3f86e'}, 'email': 'minsu97@gmail.com', 'root': '/home/langleman/TimeGAN4paper', 'host': '101-49.ycv.kr', 'username': 'langleman', 'executable': '/home/langleman/.conda/envs/timegan/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3919.6192499999997, 'min': 1200.0, 'max': 4500.0}, 'cpu_freq_per_core': [{'current': 4013.452, 'min': 1200.0, 'max': 4500.0}, {'current': 3681.707, 'min': 1200.0, 'max': 4500.0}, {'current': 3814.947, 'min': 1200.0, 'max': 4500.0}, {'current': 3877.276, 'min': 1200.0, 'max': 4500.0}, {'current': 3868.92, 'min': 1200.0, 'max': 4500.0}, {'current': 4157.08, 'min': 1200.0, 'max': 4500.0}, {'current': 3965.35, 'min': 1200.0, 'max': 4500.0}, {'current': 3705.194, 'min': 1200.0, 'max': 4500.0}, {'current': 3811.108, 'min': 1200.0, 'max': 4500.0}, {'current': 3819.012, 'min': 1200.0, 'max': 4500.0}, {'current': 3838.433, 'min': 1200.0, 'max': 4500.0}, {'current': 4051.843, 'min': 1200.0, 'max': 4500.0}], 'disk': {'/': {'total': 49.9755859375, 'used': 37.37017822265625}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 125.26838302612305}}
+2024-09-06 13:28:46,403 INFO    HandlerThread:5672 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-06 13:28:46,403 INFO    HandlerThread:5672 [system_monitor.py:probe():227] Publishing system info
+2024-09-06 13:28:46,403 DEBUG   HandlerThread:5672 [system_info.py:_save_conda():210] Saving list of conda packages installed into the current environment
+2024-09-06 13:28:47,276 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/conda-environment.yaml
+2024-09-06 13:28:49,932 DEBUG   HandlerThread:5672 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-06 13:28:49,933 INFO    HandlerThread:5672 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-06 13:28:49,940 DEBUG   SenderThread:5672 [sender.py:send():391] send: files
+2024-09-06 13:28:49,941 INFO    SenderThread:5672 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-06 13:28:50,006 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-06 13:28:50,006 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: python_packages
+2024-09-06 13:28:50,008 DEBUG   SenderThread:5672 [sender.py:send():391] send: telemetry
+2024-09-06 13:28:50,008 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:28:50,009 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:28:50,050 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:28:50,275 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/conda-environment.yaml
+2024-09-06 13:28:50,275 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/wandb-metadata.json
+2024-09-06 13:28:50,275 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/requirements.txt
+2024-09-06 13:28:50,333 DEBUG   SenderThread:5672 [sender.py:send():391] send: telemetry
+2024-09-06 13:28:50,333 DEBUG   SenderThread:5672 [sender.py:send():391] send: run
+2024-09-06 13:28:50,543 INFO    SenderThread:5672 [sender.py:send_run():1047] updated run: b5qkbeu2
+2024-09-06 13:28:50,543 DEBUG   SenderThread:5672 [sender.py:send():391] send: telemetry
+2024-09-06 13:28:50,544 DEBUG   SenderThread:5672 [sender.py:send():391] send: telemetry
+2024-09-06 13:28:50,545 DEBUG   SenderThread:5672 [sender.py:send():391] send: telemetry
+2024-09-06 13:28:50,667 INFO    wandb-upload_0:5672 [upload_job.py:push():130] Uploaded file /tmp/tmp3lh_4ukzwandb/o2hspjxo-wandb-metadata.json
+2024-09-06 13:28:50,776 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:28:51,008 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:28:51,277 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/config.yaml
+2024-09-06 13:28:51,279 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/output.log
+2024-09-06 13:28:52,008 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:28:53,008 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:28:53,278 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/output.log
+2024-09-06 13:28:54,008 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:28:55,009 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:28:56,008 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:28:56,009 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:28:57,009 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:28:58,009 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:28:59,009 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:00,009 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:01,009 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:01,282 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/output.log
+2024-09-06 13:29:02,009 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:29:02,009 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:03,009 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:03,283 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/output.log
+2024-09-06 13:29:04,010 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:05,007 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:29:05,008 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:29:05,046 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:05,284 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/output.log
+2024-09-06 13:29:06,010 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:07,010 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:07,329 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:29:08,010 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:09,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:10,010 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:11,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:12,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:12,555 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:29:13,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:13,288 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/output.log
+2024-09-06 13:29:14,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:15,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:16,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:17,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:18,015 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:29:18,015 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:18,291 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/config.yaml
+2024-09-06 13:29:19,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:20,007 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:29:20,008 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:29:20,047 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:21,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:22,012 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:23,012 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:23,252 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:29:24,012 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:25,012 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:26,012 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:27,012 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:28,013 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:29,009 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:29:29,013 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:30,013 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:31,013 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:32,013 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:33,013 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:34,010 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:29:34,013 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:35,007 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:29:35,008 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:29:35,047 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:36,013 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:37,014 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:38,014 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:39,015 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:39,221 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:29:40,014 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:41,015 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:42,015 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:43,015 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:44,015 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:45,010 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:29:45,015 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:46,015 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:46,366 DEBUG   SystemMonitor:5672 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-06 13:29:46,368 DEBUG   SenderThread:5672 [sender.py:send():391] send: stats
+2024-09-06 13:29:47,015 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:48,016 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:49,016 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:50,007 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:29:50,008 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:29:50,047 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:50,256 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:29:51,016 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:52,016 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:53,017 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:54,016 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:55,017 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:56,010 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:29:56,017 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:57,017 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:58,017 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:29:59,017 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:00,017 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:01,017 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:02,010 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:30:02,018 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:03,018 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:04,018 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:05,007 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:30:05,008 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:30:05,048 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:06,018 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:07,018 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:07,245 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:30:08,019 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:09,019 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:10,019 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:11,019 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:12,019 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:13,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:30:13,019 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:14,019 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:15,020 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:16,019 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:16,370 DEBUG   SenderThread:5672 [sender.py:send():391] send: stats
+2024-09-06 13:30:17,020 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:18,020 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:18,371 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:30:19,020 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:20,007 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:30:20,008 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:30:20,047 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:21,020 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:22,020 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:23,020 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:24,020 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:24,305 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:30:25,020 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:26,020 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:27,020 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:28,020 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:29,021 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:30,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:30:30,021 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:31,021 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:32,021 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:33,021 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:34,021 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:35,007 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:30:35,008 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:30:35,047 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:35,230 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:30:36,021 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:37,021 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:38,022 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:39,022 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:40,022 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:41,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:30:41,022 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:42,022 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:43,022 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:44,022 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:45,022 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:46,023 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:46,370 DEBUG   SenderThread:5672 [sender.py:send():391] send: stats
+2024-09-06 13:30:46,372 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:30:47,023 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:48,023 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:49,023 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:50,007 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:30:50,008 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:30:50,047 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:51,023 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:52,023 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:52,254 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:30:53,023 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:54,024 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:55,024 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:56,024 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:57,024 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:58,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:30:58,024 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:30:59,024 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:00,024 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:01,024 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:02,024 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:03,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:31:03,025 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:04,025 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:05,007 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:31:05,008 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:31:05,047 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:06,025 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:07,025 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:08,025 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:08,265 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:31:09,025 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:10,026 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:11,025 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:12,026 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:13,026 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:14,012 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:31:14,026 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:15,026 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:16,026 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:16,371 DEBUG   SenderThread:5672 [sender.py:send():391] send: stats
+2024-09-06 13:31:16,557 ERROR   FileStreamThread:5672 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/minsuna97/TimeGAN%20Paper/b5qkbeu2/file_stream
+NoneType: None
+2024-09-06 13:31:17,026 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:18,026 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:19,026 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:19,372 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:31:20,008 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:31:20,008 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:31:20,047 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:21,026 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:22,027 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:23,027 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:24,027 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:25,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:31:25,027 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:26,027 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:27,027 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:28,027 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:29,027 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:30,011 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:31:30,027 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:31,027 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:32,028 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:33,028 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:34,028 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:35,008 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:31:35,008 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:31:35,047 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:35,267 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:31:36,029 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:37,029 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:38,029 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:39,029 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:40,029 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:41,012 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:31:41,030 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:42,030 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:43,030 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:44,030 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:45,030 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:46,030 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:46,371 DEBUG   SenderThread:5672 [sender.py:send():391] send: stats
+2024-09-06 13:31:46,373 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:31:46,560 ERROR   FileStreamThread:5672 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/minsuna97/TimeGAN%20Paper/b5qkbeu2/file_stream
+NoneType: None
+2024-09-06 13:31:47,030 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:48,030 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:49,031 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:50,008 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:31:50,008 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:31:50,048 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:51,031 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:52,031 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:52,281 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:31:53,031 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:54,031 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:55,031 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:56,031 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:57,031 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:58,013 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:31:58,031 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:31:59,032 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:00,032 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:01,032 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:02,032 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:03,032 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:04,012 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:32:04,032 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:05,008 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:32:05,008 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:32:05,048 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:06,032 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:07,032 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:08,033 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:09,033 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:09,247 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:32:10,033 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:11,033 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:12,033 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:13,033 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:14,033 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:15,012 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:32:15,033 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:16,033 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:16,372 DEBUG   SenderThread:5672 [sender.py:send():391] send: stats
+2024-09-06 13:32:16,559 ERROR   FileStreamThread:5672 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/minsuna97/TimeGAN%20Paper/b5qkbeu2/file_stream
+NoneType: None
+2024-09-06 13:32:17,034 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:18,034 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:19,034 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:20,008 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-06 13:32:20,009 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: stop_status
+2024-09-06 13:32:20,048 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:20,210 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:32:21,034 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:22,034 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:23,034 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:23,358 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/output.log
+2024-09-06 13:32:24,034 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:25,034 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:25,488 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:32:25,530 DEBUG   SenderThread:5672 [sender.py:send():391] send: exit
+2024-09-06 13:32:25,530 INFO    SenderThread:5672 [sender.py:send_exit():598] handling exit code: 1
+2024-09-06 13:32:25,530 INFO    SenderThread:5672 [sender.py:send_exit():600] handling runtime: 219
+2024-09-06 13:32:25,531 INFO    SenderThread:5672 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-06 13:32:25,531 INFO    SenderThread:5672 [sender.py:send_exit():606] send defer
+2024-09-06 13:32:25,531 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:25,531 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 0
+2024-09-06 13:32:25,532 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:25,532 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-09-06 13:32:25,532 INFO    SenderThread:5672 [sender.py:transition_state():626] send defer: 1
+2024-09-06 13:32:25,532 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:25,532 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 1
+2024-09-06 13:32:25,532 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:25,532 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-09-06 13:32:25,533 INFO    SenderThread:5672 [sender.py:transition_state():626] send defer: 2
+2024-09-06 13:32:25,533 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:25,533 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 2
+2024-09-06 13:32:25,533 INFO    HandlerThread:5672 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-06 13:32:25,533 INFO    HandlerThread:5672 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-06 13:32:25,534 DEBUG   SystemMonitor:5672 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-06 13:32:25,534 INFO    HandlerThread:5672 [interfaces.py:finish():200] Joined disk monitor
+2024-09-06 13:32:25,534 DEBUG   SystemMonitor:5672 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-06 13:32:25,601 INFO    HandlerThread:5672 [interfaces.py:finish():200] Joined gpu monitor
+2024-09-06 13:32:25,602 INFO    HandlerThread:5672 [interfaces.py:finish():200] Joined memory monitor
+2024-09-06 13:32:25,602 INFO    HandlerThread:5672 [interfaces.py:finish():200] Joined network monitor
+2024-09-06 13:32:25,603 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:25,603 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-09-06 13:32:25,603 INFO    SenderThread:5672 [sender.py:transition_state():626] send defer: 3
+2024-09-06 13:32:25,603 DEBUG   SenderThread:5672 [sender.py:send():391] send: stats
+2024-09-06 13:32:25,603 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:25,604 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 3
+2024-09-06 13:32:25,604 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:25,604 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-09-06 13:32:25,604 INFO    SenderThread:5672 [sender.py:transition_state():626] send defer: 4
+2024-09-06 13:32:25,604 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:25,604 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 4
+2024-09-06 13:32:25,605 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:25,605 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-09-06 13:32:25,605 INFO    SenderThread:5672 [sender.py:transition_state():626] send defer: 5
+2024-09-06 13:32:25,605 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:25,605 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 5
+2024-09-06 13:32:25,605 DEBUG   SenderThread:5672 [sender.py:send():391] send: summary
+2024-09-06 13:32:25,606 INFO    SenderThread:5672 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-06 13:32:25,606 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:25,606 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-09-06 13:32:25,606 INFO    SenderThread:5672 [sender.py:transition_state():626] send defer: 6
+2024-09-06 13:32:25,607 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:25,607 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 6
+2024-09-06 13:32:25,607 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:25,607 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-09-06 13:32:25,607 INFO    SenderThread:5672 [sender.py:transition_state():626] send defer: 7
+2024-09-06 13:32:25,607 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: status_report
+2024-09-06 13:32:25,608 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:25,608 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 7
+2024-09-06 13:32:25,608 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:25,608 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-09-06 13:32:26,359 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_created():271] file/dir created: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/wandb-summary.json
+2024-09-06 13:32:26,530 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-06 13:32:26,995 ERROR   FileStreamThread:5672 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/minsuna97/TimeGAN%20Paper/b5qkbeu2/file_stream
+NoneType: None
+2024-09-06 13:32:27,012 INFO    SenderThread:5672 [sender.py:transition_state():626] send defer: 8
+2024-09-06 13:32:27,012 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: poll_exit
+2024-09-06 13:32:27,012 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:27,013 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 8
+2024-09-06 13:32:27,013 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:27,013 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-09-06 13:32:27,013 INFO    SenderThread:5672 [job_builder.py:build():443] Attempting to build job artifact
+2024-09-06 13:32:27,014 INFO    SenderThread:5672 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-09-06 13:32:27,042 INFO    SenderThread:5672 [job_builder.py:build():548] adding wandb-job metadata file
+2024-09-06 13:32:27,045 INFO    SenderThread:5672 [sender.py:transition_state():626] send defer: 9
+2024-09-06 13:32:27,046 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:27,046 DEBUG   SenderThread:5672 [sender.py:send():391] send: artifact
+2024-09-06 13:32:27,046 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 9
+2024-09-06 13:32:27,360 INFO    Thread-12 :5672 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/output.log
+2024-09-06 13:32:27,531 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-06 13:32:28,029 ERROR   SenderThread:5672 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-06 13:32:28,029 ERROR   SenderThread:5672 [internal_api.py:execute():350] {"errors":[{"message":"failed to find run TimeGAN Paper/b5qkbeu2","path":["useArtifact"]}],"data":{"useArtifact":null}}
+2024-09-06 13:32:28,030 ERROR   SenderThread:5672 [sender.py:send_artifact():1553] send_artifact: failed for artifact "job/job-https___github.com_langleman_TimeGAN-fashion.git_main_timegan.py": It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-09-06 13:32:28,030 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:28,030 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-09-06 13:32:28,030 INFO    SenderThread:5672 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-06 13:32:28,360 INFO    SenderThread:5672 [dir_watcher.py:finish():388] scan: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files
+2024-09-06 13:32:28,361 INFO    SenderThread:5672 [dir_watcher.py:finish():402] scan save: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/config.yaml config.yaml
+2024-09-06 13:32:28,361 INFO    SenderThread:5672 [dir_watcher.py:finish():402] scan save: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/conda-environment.yaml conda-environment.yaml
+2024-09-06 13:32:28,365 INFO    SenderThread:5672 [dir_watcher.py:finish():402] scan save: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/wandb-metadata.json wandb-metadata.json
+2024-09-06 13:32:28,365 INFO    SenderThread:5672 [dir_watcher.py:finish():402] scan save: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/requirements.txt requirements.txt
+2024-09-06 13:32:28,368 INFO    SenderThread:5672 [dir_watcher.py:finish():402] scan save: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/output.log output.log
+2024-09-06 13:32:28,371 INFO    SenderThread:5672 [dir_watcher.py:finish():402] scan save: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/wandb-summary.json wandb-summary.json
+2024-09-06 13:32:28,376 INFO    SenderThread:5672 [sender.py:transition_state():626] send defer: 10
+2024-09-06 13:32:28,376 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: poll_exit
+2024-09-06 13:32:28,376 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:28,379 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 10
+2024-09-06 13:32:28,380 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:28,380 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-09-06 13:32:28,380 INFO    SenderThread:5672 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-06 13:32:28,532 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-06 13:32:28,533 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: poll_exit
+2024-09-06 13:32:28,548 ERROR   wandb-upload_0:5672 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-06 13:32:28,548 ERROR   wandb-upload_0:5672 [internal_api.py:execute():350] {"errors":[{"message":"run TimeGAN Paper/b5qkbeu2 not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-06 13:32:28,548 ERROR   Thread-11 :5672 [step_upload.py:_handle_event():145] Failed to upload file: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/config.yaml
+Traceback (most recent call last):
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 2506, in upload_urls
+    "files": [file for file in files],
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 320, in gql
+    **kwargs,
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/util.py", line 911, in no_retry_auth
+    "It appears that you do not have permission to access the requested resource. "
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-09-06 13:32:28,557 ERROR   wandb-upload_2:5672 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-06 13:32:28,604 ERROR   wandb-upload_4:5672 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-06 13:32:28,606 ERROR   wandb-upload_3:5672 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-06 13:32:28,608 ERROR   wandb-upload_5:5672 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-06 13:32:28,655 ERROR   wandb-upload_2:5672 [internal_api.py:execute():350] {"errors":[{"message":"run TimeGAN Paper/b5qkbeu2 not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-06 13:32:28,655 ERROR   wandb-upload_4:5672 [internal_api.py:execute():350] {"errors":[{"message":"run TimeGAN Paper/b5qkbeu2 not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-06 13:32:28,655 ERROR   wandb-upload_3:5672 [internal_api.py:execute():350] {"errors":[{"message":"run TimeGAN Paper/b5qkbeu2 not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-06 13:32:28,655 ERROR   wandb-upload_5:5672 [internal_api.py:execute():350] {"errors":[{"message":"run TimeGAN Paper/b5qkbeu2 not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-06 13:32:28,656 ERROR   Thread-11 :5672 [step_upload.py:_handle_event():145] Failed to upload file: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/conda-environment.yaml
+Traceback (most recent call last):
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 2506, in upload_urls
+    "files": [file for file in files],
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 320, in gql
+    **kwargs,
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/util.py", line 911, in no_retry_auth
+    "It appears that you do not have permission to access the requested resource. "
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-09-06 13:32:28,657 ERROR   Thread-11 :5672 [step_upload.py:_handle_event():145] Failed to upload file: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/output.log
+Traceback (most recent call last):
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 2506, in upload_urls
+    "files": [file for file in files],
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 320, in gql
+    **kwargs,
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/util.py", line 911, in no_retry_auth
+    "It appears that you do not have permission to access the requested resource. "
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-09-06 13:32:28,657 ERROR   Thread-11 :5672 [step_upload.py:_handle_event():145] Failed to upload file: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/wandb-summary.json
+Traceback (most recent call last):
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 2506, in upload_urls
+    "files": [file for file in files],
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 320, in gql
+    **kwargs,
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/util.py", line 911, in no_retry_auth
+    "It appears that you do not have permission to access the requested resource. "
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-09-06 13:32:28,657 ERROR   Thread-11 :5672 [step_upload.py:_handle_event():145] Failed to upload file: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/files/requirements.txt
+Traceback (most recent call last):
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 2506, in upload_urls
+    "files": [file for file in files],
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 320, in gql
+    **kwargs,
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/wandb/util.py", line 911, in no_retry_auth
+    "It appears that you do not have permission to access the requested resource. "
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-09-06 13:32:28,858 INFO    Thread-11 :5672 [sender.py:transition_state():626] send defer: 11
+2024-09-06 13:32:28,858 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:28,859 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 11
+2024-09-06 13:32:28,859 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:28,859 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-09-06 13:32:28,859 INFO    SenderThread:5672 [file_pusher.py:join():175] waiting for file pusher
+2024-09-06 13:32:28,859 INFO    SenderThread:5672 [sender.py:transition_state():626] send defer: 12
+2024-09-06 13:32:28,860 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:28,860 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 12
+2024-09-06 13:32:28,860 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:28,860 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-09-06 13:32:28,860 INFO    SenderThread:5672 [file_stream.py:finish():601] file stream finish called
+2024-09-06 13:32:29,051 INFO    SenderThread:5672 [file_stream.py:finish():605] file stream finish is done
+2024-09-06 13:32:29,051 INFO    SenderThread:5672 [sender.py:transition_state():626] send defer: 13
+2024-09-06 13:32:29,051 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:29,051 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 13
+2024-09-06 13:32:29,052 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:29,052 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-09-06 13:32:29,052 INFO    SenderThread:5672 [sender.py:transition_state():626] send defer: 14
+2024-09-06 13:32:29,052 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: defer
+2024-09-06 13:32:29,053 DEBUG   SenderThread:5672 [sender.py:send():391] send: final
+2024-09-06 13:32:29,053 INFO    HandlerThread:5672 [handler.py:handle_request_defer():184] handle defer: 14
+2024-09-06 13:32:29,053 DEBUG   SenderThread:5672 [sender.py:send():391] send: footer
+2024-09-06 13:32:29,053 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: defer
+2024-09-06 13:32:29,053 INFO    SenderThread:5672 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-09-06 13:32:29,054 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-06 13:32:29,054 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: poll_exit
+2024-09-06 13:32:29,055 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: server_info
+2024-09-06 13:32:29,055 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-06 13:32:29,055 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: get_summary
+2024-09-06 13:32:29,055 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: sampled_history
+2024-09-06 13:32:29,056 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-06 13:32:29,056 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: server_info
+2024-09-06 13:32:29,246 DEBUG   SenderThread:5672 [sender.py:send_request():418] send_request: poll_exit
+2024-09-06 13:32:29,247 INFO    MainThread:5672 [wandb_run.py:_footer_history_summary_info():4076] rendering history
+2024-09-06 13:32:29,247 INFO    MainThread:5672 [wandb_run.py:_footer_history_summary_info():4108] rendering summary
+2024-09-06 13:32:29,247 INFO    MainThread:5672 [wandb_run.py:_footer_sync_info():4035] logging synced files
+2024-09-06 13:32:29,247 DEBUG   HandlerThread:5672 [handler.py:handle_request():158] handle_request: shutdown
+2024-09-06 13:32:29,247 INFO    HandlerThread:5672 [handler.py:finish():880] shutting down handler
+2024-09-06 13:32:30,056 INFO    WriterThread:5672 [datastore.py:close():296] close: /home/langleman/TimeGAN4paper/wandb/run-20240906_132845-b5qkbeu2/run-b5qkbeu2.wandb
+2024-09-06 13:32:30,247 INFO    SenderThread:5672 [sender.py:finish():1631] shutting down sender
+2024-09-06 13:32:30,247 INFO    SenderThread:5672 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-06 13:32:30,247 INFO    SenderThread:5672 [file_pusher.py:join():175] waiting for file pusher

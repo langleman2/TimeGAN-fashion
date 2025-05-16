@@ -1,0 +1,66 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:43: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+BL_weekly_new_train dataset is ready.
+no:294, seq_len:72, dim:1
+> /home/langleman/TimeGAN4paper/timegan.py(81)timegan()
+-> ori_data, min_val, max_val = MinMaxScaler(ori_data)
+array([[[0.6       ],
+        [0.45169492],
+        [0.54830508],
+        ...,
+        [0.45      ],
+        [0.50677966],
+        [0.38220339]],
+       [[0.26779661],
+        [0.3720339 ],
+        [0.51101695],
+        ...,
+        [0.7720339 ],
+        [0.88474576],
+        [0.90508475]],
+       [[0.43728814],
+        [0.59067797],
+        [0.54745763],
+        ...,
+        [0.27966102],
+        [0.35169492],
+        [0.3220339 ]],
+       ...,
+       [[0.61525424],
+        [0.43220339],
+        [0.51779661],
+        ...,
+        [0.02033898],
+        [0.01949153],
+        [0.02288136]],
+       [[0.37118644],
+        [0.38474576],
+        [0.2940678 ],
+        ...,
+        [0.        ],
+        [0.02966102],
+        [0.01440678]],
+       [[0.8940678 ],
+        [0.96864407],
+        [0.87457627],
+        ...,
+        [0.21016949],
+        [0.07118644],
+        [0.08983051]]])
+(294, 72, 1)
+--KeyboardInterrupt--
+(294, 72, 1)
+Traceback (most recent call last):
+  File "main_timegan.py", line 207, in <module>
+    ori_data, generated_data, metrics = main(args)
+  File "main_timegan.py", line 87, in main
+    generated_data = timegan(ori_data, parameters)
+  File "/home/langleman/TimeGAN4paper/timegan.py", line 81, in timegan
+    ori_data, min_val, max_val = MinMaxScaler(ori_data)
+  File "/home/langleman/TimeGAN4paper/timegan.py", line 81, in timegan
+    ori_data, min_val, max_val = MinMaxScaler(ori_data)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

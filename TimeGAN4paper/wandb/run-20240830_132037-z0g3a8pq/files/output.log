@@ -1,0 +1,113 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:43: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:103: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:120: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:120: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/utils.py:95: GRUCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.GRUCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:121: MultiRNNCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.StackedRNNCells, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:122: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:559: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:565: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:575: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+WARNING:tensorflow:From /home/langleman/.conda/envs/timegan/lib/python3.7/site-packages/tensorflow_core/contrib/layers/python/layers/layers.py:1866: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+BL_weekly_new_train dataset is ready.
+no:12, seq_len:354, dim:1
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:210: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:217: The name tf.losses.sigmoid_cross_entropy is deprecated. Please use tf.compat.v1.losses.sigmoid_cross_entropy instead.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:228: The name tf.losses.mean_squared_error is deprecated. Please use tf.compat.v1.losses.mean_squared_error instead.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:245: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:252: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:253: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+Start Embedding Network Training
+step: 0/6000, e_loss: 0.3309
+step: 1000/6000, e_loss: 0.0603
+step: 2000/6000, e_loss: 0.0535
+step: 3000/6000, e_loss: 0.0504
+step: 4000/6000, e_loss: 0.0532
+step: 5000/6000, e_loss: 0.0468
+Finish Embedding Network Training
+Start Training with Supervised Loss Only
+step: 0/6000, s_loss: 0.2464
+step: 1000/6000, s_loss: 0.0167
+step: 2000/6000, s_loss: 0.01
+step: 3000/6000, s_loss: 0.0073
+step: 4000/6000, s_loss: 0.0057
+step: 5000/6000, s_loss: 0.0049
+Finish Training with Supervised Loss Only
+Start Joint Training
+step: 0/6000, d_loss: 1.9033, g_loss_u: 0.9504, g_loss_s: 0.0164, g_loss_v: 0.2918, e_loss_t0: 0.1318
+step: 1000/6000, d_loss: 0.2056, g_loss_u: 5.5662, g_loss_s: 0.0092, g_loss_v: 0.1788, e_loss_t0: 0.0354
+step: 2000/6000, d_loss: 0.3171, g_loss_u: 5.6065, g_loss_s: 0.0106, g_loss_v: 0.2575, e_loss_t0: 0.0308
+step: 3000/6000, d_loss: 0.2267, g_loss_u: 4.0748, g_loss_s: 0.0225, g_loss_v: 0.2677, e_loss_t0: 0.0257
+step: 4000/6000, d_loss: 0.1534, g_loss_u: 6.7437, g_loss_s: 0.0206, g_loss_v: 0.2043, e_loss_t0: 0.0202
+step: 5000/6000, d_loss: 0.151, g_loss_u: 6.9697, g_loss_s: 0.0199, g_loss_v: 0.2436, e_loss_t0: 0.0173
+Finish Joint Training
+generated_data: [[[0.01058021]
+  [0.0937489 ]
+  [0.23795   ]
+  ...
+  [0.09023869]
+  [0.39350635]
+  [0.09011036]]
+ [[0.01049474]
+  [0.08112845]
+  [0.14726472]
+  ...
+  [0.33447343]
+  [0.10525027]
+  [0.33474934]]
+ [[0.0106121 ]
+  [0.10058364]
+  [0.2900573 ]
+  ...
+  [0.1036979 ]
+  [0.3446057 ]
+  [0.10351914]]
+ ...
+ [[0.0104866 ]
+  [0.08302748]
+  [0.17064077]
+  ...
+  [0.10655984]
+  [0.3317697 ]
+  [0.10637099]]
+ [[0.01048797]
+  [0.08125684]
+  [0.14862785]
+  ...
+  [0.10512745]
+  [0.33501428]
+  [0.10494566]]
+ [[0.01047307]
+  [0.08087429]
+  [0.1513736 ]
+  ...
+  [0.33349422]
+  [0.1055865 ]
+  [0.33377492]]]
+Finish Synthetic Data Generation
+Finish saving

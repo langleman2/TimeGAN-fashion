@@ -1,0 +1,65 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:43: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+BL_weekly_new_train dataset is ready.
+no:12, seq_len:354, dim:1
+> /home/langleman/TimeGAN4paper/timegan.py(81)timegan()
+-> ori_data, min_val, max_val = MinMaxScaler(ori_data)
+> /home/langleman/TimeGAN4paper/timegan.py(73)MinMaxScaler()
+-> max_val = np.max(np.max(data, axis = 0), axis = 0)
+> /home/langleman/TimeGAN4paper/timegan.py(74)MinMaxScaler()
+-> norm_data = data / (max_val + 1e-7)
+> /home/langleman/TimeGAN4paper/timegan.py(76)MinMaxScaler()
+-> return norm_data, min_val, max_val
+--Return--
+> /home/langleman/TimeGAN4paper/timegan.py(76)MinMaxScaler()->(array([[[0.08...0.00932203]]]), array([0.]), array([1.]))
+-> return norm_data, min_val, max_val
+> /home/langleman/TimeGAN4paper/timegan.py(86)timegan()
+-> hidden_dim   = parameters['hidden_dim']
+*** NameError: name 'norm_data_list' is not defined
+*** NameError: name 'norm_data_list' is not defined
+> /home/langleman/TimeGAN4paper/timegan.py(87)timegan()
+-> num_layers   = parameters['num_layer']
+> /home/langleman/TimeGAN4paper/timegan.py(88)timegan()
+-> iterations   = parameters['iterations']
+> /home/langleman/TimeGAN4paper/timegan.py(89)timegan()
+-> batch_size   = parameters['batch_size']
+> /home/langleman/TimeGAN4paper/timegan.py(90)timegan()
+-> module_name  = parameters['module']
+> /home/langleman/TimeGAN4paper/timegan.py(91)timegan()
+-> z_dim        = dim
+> /home/langleman/TimeGAN4paper/timegan.py(92)timegan()
+-> gamma        = 1
+> /home/langleman/TimeGAN4paper/timegan.py(95)timegan()
+-> "iterations": iterations,
+> /home/langleman/TimeGAN4paper/timegan.py(96)timegan()
+-> "batch_size": batch_size,
+> /home/langleman/TimeGAN4paper/timegan.py(97)timegan()
+-> "hidden_dim": hidden_dim,
+> /home/langleman/TimeGAN4paper/timegan.py(98)timegan()
+-> "num_layers": num_layers
+> /home/langleman/TimeGAN4paper/timegan.py(100)timegan()
+-> wandb.config.update(args)
+> /home/langleman/TimeGAN4paper/timegan.py(105)timegan()
+-> X = tf.placeholder(tf.float32, [None, max_seq_len, dim], name = "myinput_x")
+> /home/langleman/TimeGAN4paper/timegan.py(106)timegan()
+-> Z = tf.placeholder(tf.float32, [None, max_seq_len, z_dim], name = "myinput_z")
+> /home/langleman/TimeGAN4paper/timegan.py(107)timegan()
+-> T = tf.placeholder(tf.int32, [None], name = "myinput_t")
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:105: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+*** NameError: name 'norm_data_list' is not defined
+--KeyboardInterrupt--
+--KeyboardInterrupt--
+Traceback (most recent call last):
+  File "main_timegan.py", line 207, in <module>
+    ori_data, generated_data, metrics = main(args)
+  File "main_timegan.py", line 87, in main
+    generated_data = timegan(ori_data, parameters)
+  File "/home/langleman/TimeGAN4paper/timegan.py", line 107, in timegan
+    T = tf.placeholder(tf.int32, [None], name = "myinput_t")
+  File "/home/langleman/TimeGAN4paper/timegan.py", line 107, in timegan
+    T = tf.placeholder(tf.int32, [None], name = "myinput_t")
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/langleman/.conda/envs/timegan/lib/python3.7/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

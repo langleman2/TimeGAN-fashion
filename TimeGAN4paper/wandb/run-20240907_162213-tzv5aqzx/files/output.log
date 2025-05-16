@@ -1,0 +1,12 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+WARNING:tensorflow:From /home/langleman/TimeGAN4paper/timegan.py:43: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+BL_weekly_new_train dataset is ready.
+no:12, seq_len:354, dim:1
+> /home/langleman/TimeGAN4paper/timegan.py(80)timegan()
+-> ori_data, min_val, max_val = MinMaxScaler(ori_data)
+*** NameError: name 'min_val' is not defined
+> /home/langleman/TimeGAN4paper/timegan.py(87)timegan()
+-> hidden_dim   = parameters['hidden_dim']
+array([0.])
+(12, 354, 1)
+[354, 354, 354, 354, 354, 354, 354, 354, 354, 354, 354, 354]

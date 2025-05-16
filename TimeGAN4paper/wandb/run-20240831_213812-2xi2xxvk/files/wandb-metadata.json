@@ -1,0 +1,117 @@
+{
+    "os": "Linux-3.10.0-1160.83.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core",
+    "python": "3.7.12",
+    "heartbeatAt": "2024-08-31T12:38:12.916175",
+    "startedAt": "2024-08-31T12:38:12.167843",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--seq_len",
+        "354",
+        "--iteration",
+        "6000",
+        "--cat",
+        "BL",
+        "--data_name",
+        "BL_weekly_new_train"
+    ],
+    "state": "running",
+    "program": "main_timegan.py",
+    "codePathLocal": "main_timegan.py",
+    "codePath": "main_timegan.py",
+    "git": {
+        "remote": "https://github.com/langleman/TimeGAN-fashion.git",
+        "commit": "0b20a7e863d195d6ec369e63432d9c0da4f3f86e"
+    },
+    "email": "minsu97@gmail.com",
+    "root": "/home/langleman/TimeGAN4paper",
+    "host": "101-49.ycv.kr",
+    "username": "langleman",
+    "executable": "/home/langleman/.conda/envs/timegan/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 1271.3854166666667,
+        "min": 1200.0,
+        "max": 4500.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1199.835,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 1199.835,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 1415.051,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 1218.127,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 1282.263,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 1199.835,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 1201.416,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 1200.964,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 1567.26,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 1200.061,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 1372.143,
+            "min": 1200.0,
+            "max": 4500.0
+        },
+        {
+            "current": 1199.835,
+            "min": 1200.0,
+            "max": 4500.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 49.9755859375,
+            "used": 37.38850402832031
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 125.26838302612305
+    }
+}
